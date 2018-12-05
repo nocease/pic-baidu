@@ -3,9 +3,6 @@
 
 
 使用方法：
-1.
-在网页中插入
-<iframe src=“本站域名/img/upimg.aspx” style=“height:115px;width:310px”></iframe> 
+1.在网页中插入 <iframe src=“本站域名/img/upimg.aspx” style=“height:115px;width:310px”></iframe> 
 
-2.
-if(Session["img_url"]==NULL) {未上传图片} else {URL=Session["img_url"].ToString()}
+2.if(Session["img_url"]==NULL) {未上传图片} else {URL=Session["img_url"].ToString()}
