@@ -9,22 +9,27 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 52px;
-            height: 26px;
+            width: 75px;
+            height: 24px;
         }
+
     </style>
 </head>
-<body style="background-color:bisque">  <div align="center">
+<body style="background-color:bisque">  
+    <div align="center">
     <form method="post"  enctype="multipart/form-data">
         <p>请选择jpg,png,gif格式的图片：</p>
-        <input type="file" name="file" id="file" value="" accept=".jpg,.png,.gif" class="auto-style2" />
+        <input type="file" name="file" id="file" value="" accept=".jpg,.png,.gif"/>
         <br /> 
-        <input type="button" name="name" value="确定" class="auto-style1" />
+        <input type="button" name="name" id="button1" value="确定" onclick="button1_click()" class="auto-style1" />
     </form>
     <input type="hidden" runat="server" id="json">
+
 <progress style="display:none"></progress>
-<div id="res"></div>
-        </div>
+        <br />
+<input type="text" id="tip" name="name" style="border:0;color:red;background-color:bisque;visibility:hidden" value="请稍等。。。"/>
+<%--<div id="res"></div>--%>
+    </div>
 
 <script>
 $(':button').click(function(){
@@ -62,7 +67,11 @@ function progressHandlingFunction(e){
     if(e.lengthComputable){
         $('progress').attr({value:e.loaded,max:e.total});
     }
-}
+    }
+function button1_click() {
+        document.getElementById("button1").setAttribute("disabled", true);
+        document.getElementById("tip").style.visibility = "visible";
+    }
 </script>
 </body>
 </html>
