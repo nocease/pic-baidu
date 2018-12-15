@@ -19,3 +19,7 @@ pic-baidu
 
 
 获取的图片直链保存在Session["img_url"]中。
+
+
+演示：
+http://myfile.nocease.top/img.aspx
