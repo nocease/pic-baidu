@@ -1,8 +1,14 @@
-# pic-baidu
-利用百度识图，做一个ASPX网站通用的图床
+pic-baidu
+
+
+说明：
+1.利用百度识图，做了一个ASPX网站通用的图床，在开发者需要上传图片时使用。
+2.无需占用自己的服务器空间或带宽储存或传输图片，仅需保存图片直链到自己的数据库。
+3.源代码为两个aspx页面。
 
 
 使用方法：
-1.在网页中插入 <iframe src=“本站域名/img/upimg.aspx” style=“height:115px;width:310px”></iframe> 
+方法1：使用iframe框架，将源代码中的upimg.aspx嵌入到自己网站的上传图片位置，调整大小 。
+方法2：使用弹出页面操作，将源代码中的upimg.aspx嵌入到自己网站的上传图片位置，调整大小 。
 
-2.if(Session["img_url"]==NULL) {未上传图片} else {URL=Session["img_url"].ToString()}
+获取的链接保存在Session["img_url"]中。
