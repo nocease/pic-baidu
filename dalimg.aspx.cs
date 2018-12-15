@@ -16,6 +16,7 @@ public partial class dalimg : System.Web.UI.Page
         Label1.Text = "上传成功！";
         string hppts = "https://image.baidu.com/search/down?tn=download&url=";
         Session["img_url"] = hppts + url[5];  //获取直连
+        Image1.ImageUrl = Session["img_url"].ToString();
         }
         catch
         {
