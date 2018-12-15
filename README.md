@@ -22,7 +22,7 @@
          onclick="x_admin_show('上传图片','img/upimg.aspx','300','200')"
  
  
-  获取的图片直链保存在Session["img_url"]中。
+  注：获取的图片直链保存在Session["img_url"]中。
 
  
   
