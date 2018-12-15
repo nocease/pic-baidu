@@ -14,9 +14,10 @@ pic-baidu
 使用方法：
 
 方法1：使用iframe框架，将源代码中的upimg.aspx嵌入到自己网站的上传图片位置，调整iframe大小 。
+  <iframe src="img/upimg.aspx"></iframe>
 
 方法2：使用(弹出窗口页面)操作 ，将源代码中的upimg.aspx嵌入到自己网站的上传图片位置，调整弹出的窗口大小 。（弹出窗口页面在我的另一个GitHub项目中）
-
+  onclick="x_admin_show('上传图片','img/upimg.aspx','300','200')"
 
 获取的图片直链保存在Session["img_url"]中。
 
