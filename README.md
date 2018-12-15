@@ -13,7 +13,7 @@
 
 使用方法：
  
-   方法1：使用iframe框架，将源代码中的upimg.aspx嵌入到自己网站的上传图片位置，调整iframe大小 。
+   方法1：使用iframe框架，将源代码中的upimg.aspx嵌入到自己网站的上传图片位置。
  
          <iframe src="img/upimg.aspx"></iframe>
  
