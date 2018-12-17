@@ -23,8 +23,13 @@
  
  
   注：获取的图片直链保存在Session["img_url"]中。
+  
+        建议：
+        1.在加载页面之前先判断是否存在Session["img_url"]，若存在将它设为null；
+        2.在把图片直链存到数据库中后，把Session["img_url"]设为为null；
+        
 
- 
+         
   
 
 演示：
