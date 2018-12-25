@@ -28,10 +28,14 @@
 <script>    
     function x_admin_close()
     {
-   window.location.href="upimg.aspx";
-    var index = parent.layer.getFrameIndex(window.name);
+        window.parent.location.reload(); //刷新父页面
+        window.location.href = "upimg.aspx";//跳回上传页
+
+        //关闭页面
+        var index = parent.layer.getFrameIndex(window.name);
         parent.layer.close(index);
     }
+
 </script>
 
 </html>
